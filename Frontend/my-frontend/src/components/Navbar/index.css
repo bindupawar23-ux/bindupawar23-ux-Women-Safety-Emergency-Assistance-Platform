@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #2c2c54, #474787);
+  padding: 15px 30px;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4d6d;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #ff4d6d;
+}
+
+/* Active underline effect */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #ff4d6d;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
